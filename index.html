@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TS AAMIR Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'El Messiri', sans-serif;
+      height: 100%;
+      background: #dff6ff;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(30px);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 140, 255, 0.4);
+      border: 2px solid rgba(0, 140, 255, 0.3);
+      width: 95%;
+      max-width: 750px;
+      padding: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00bfff;
+      box-shadow: 0 0 20px #00bfff;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .name {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #0077cc;
+      margin: 0 0 10px 0;
+      text-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff;
+    }
+
+    .desc {
+      font-size: 1.05rem;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      color: #004080;
+      margin: 20px 0 10px 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title i {
+      color: #00bfff;
+    }
+
+    .section-text {
+      font-size: 1rem;
+      color: #000;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      margin: 20px 0 10px 0;
+      color: #004080;
+    }
+
+    .price del {
+      color: red;
+      margin-right: 10px;
+    }
+
+    .book-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #00b894;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00b894;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .book-btn:hover {
+      background: #01a97c;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section-title {
+        justify-content: center;
+      }
+
+      .info {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="card">
+  <img src="https://i.postimg.cc/52WM29TC/IMG-20250404-162529-886.jpg" alt="TS AAMIR" class="profile-img" />
+  <div class="info">
+    <h1 class="name">TS AAMIR</h1>
+    <p class="desc">
+      TS AAMIR is a top-tier video editor who can bring your videos to life — whether you want an emotional vibe or hard-hitting action!
+    </p>
+
+    <div class="section-title"><i class="fas fa-palette"></i>Aesthetic Edit</div>
+    <p class="section-text">
+      Soft, dreamy, and emotional — aesthetic edits focus on <strong>smooth transitions</strong>, <strong>pastel colors</strong>, <strong>slow-mo effects</strong>, and <strong>vibe-filled music</strong> to give your reels a cinematic and peaceful feel. Perfect for love stories, Instagram vibes, or mood videos.
+    </p>
+
+    <div class="section-title"><i class="fas fa-bolt"></i>Hard Phone Edit</div>
+    <p class="section-text">
+      Bold and intense — hard edits are packed with <strong>beat sync</strong>, <strong>camera shakes</strong>, <strong>flash effects</strong>, and <strong>fast transitions</strong>. Created entirely on phone, these edits are perfect for action, gaming, or music beats that hit with power.
+    </p>
+
+    <p class="price"><del>₹149</del> <strong>Now ₹99 only!</strong></p>
+    <a class="book-btn" href="https://wa.me/917388789557?text=Hello%20TS%20AAMIR%2C%20I%20want%20to%20book%20a%20video%20edit.">Do You Book In?</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#00bfff"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.3
+      },
+      "size": {
+        "value": 4
+      },
+      "move": {
+        "enable": true,
+        "speed": 1
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>
